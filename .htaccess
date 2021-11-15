@@ -7,4 +7,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^tasks/([0-9]+)$ controllers/task.php?taskid=$1 [L]
 RewriteRule ^tasks/complete$ controllers/task.php?completed=Y [L]
 RewriteRule ^tasks/incomplete$ controllers/task.php?completed=N [L]
+RewriteRule ^tasks/page/([0-9]+)$ controllers/task.php?page=$1 [L]
 RewriteRule ^tasks$ controllers/task.php [L]
